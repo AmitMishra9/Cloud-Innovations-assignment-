@@ -1,0 +1,49 @@
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  .content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    flex-basis: 200px;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 1rem;
+    background-color: #fff;
+    overflow-y: auto;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      flex-basis: auto;
+      order: 2;
+    }
+  
+    .main {
+      order: 1;
+    }
+  }
+  

@@ -1,0 +1,54 @@
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #e0e0e0;
+    height: 100vh;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .rating-filter label,
+  .sort-options label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .star {
+    color: gold;
+    font-size: 20px;
+  }
+  
+  .star.empty {
+    color: #ccc;
+  }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      border-right: none;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .rating-filter,
+    .sort-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .rating-filter label,
+    .sort-options label {
+      width: 48%;
+    }
+  }

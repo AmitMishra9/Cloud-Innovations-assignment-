@@ -1,0 +1,7 @@
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust spacing between cards */
+    gap: 1rem; /* Space between cards */
+    margin: 1rem; /* Space around the container */
+  }
